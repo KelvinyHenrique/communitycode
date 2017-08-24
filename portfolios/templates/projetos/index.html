@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <!--
  * Ó o bicho vindo muleque
@@ -13,30 +14,33 @@
         <!-- Load Roboto font -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Load css styles -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/styles.css" />
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/animate.css" />
         <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../static/images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../static/images/ico/apple-touch-icon-114.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
-        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../../static/images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="../../static/images/ico/favicon.ico">
     </head>
     
     <body>
+
+        {% for meuprojeto in meuprojeto %}
+
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <a href="#" class="brand">
-                        <img src="images/logo.png" width="120" height="40" alt="Logo" />
+                        <img src="../../static/images/logo.png" width="120" height="40" alt="Logo" />
                         <!--  logo -->
                     </a>
                     <!--  Nevegação   -->
@@ -73,7 +77,7 @@
                         <p>Uma nova comunidade que busca uma nova forma de trabalho. Sendo Jovem, Remota e Evolutiva.</p>
                         <a href="#" class="da-link button">Leia Mais</a>
                         <div class="da-img">
-                            <img src="images/Slider01.png" alt="image01" width="320">
+                            <img src="../../static/images/slider01.png" alt="image01" width="320">
                         </div>
                     </div>
                     <!-- End first slide -->
@@ -84,7 +88,7 @@
                         <p>Combinando diversos tipos de conhecimento, o projeto visa a uma melhora relevante na aprendizagem em varias areas da tecnologia, e também o desenvolvimento da convivência em grupo e experiancia de trabalho.</p>
                         <a href="#" class="da-link button">Leia Mais</a>
                         <div class="da-img">
-                            <img src="images/Slider02.png" width="320" alt="image02">
+                            <img src="../../static/images/Slider02.png" width="320" alt="image02">
                         </div>
                     </div>
                     <!-- End second slide -->
@@ -96,7 +100,7 @@
                         </p>
                         <a href="#" class="da-link button">Read more</a>
                         <div class="da-img">
-                            <img src="images/Slider03.png" width="320" alt="image03">
+                            <img src="../../static/images/Slider03.png" width="320" alt="image03">
                         </div>
                     </div>
                     <!-- Start third slide -->
@@ -124,7 +128,7 @@
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/Service1.png" alt="service >Web Developer1">
+                                <img class="img-circle" src="../../static/images/Service1.png" alt="service >Web Developer1">
                             </div>
                             <h3>Conheçimento</h3>
                             <p>Nossa comunidade está em constante evolução com vasta quantidade de projetos em várias áreas.</p>
@@ -133,7 +137,7 @@
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/Service2.png" alt="service 2" />
+                                <img class="img-circle" src="../../static/images/Service2.png" alt="service 2" />
                             </div>
                             <h3>Programação</h3>
                             <p>Conheçemos diferentes tipos de linguagens tais como: Python, CSS, Html, C++, Java, Java script e diversas outras.</p>
@@ -142,7 +146,7 @@
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/Service3.png" alt="service 3">
+                                <img class="img-circle" src="../../static/images/Service3.png" alt="service 3">
                             </div>
                             <h3>Diversidade</h3>
                             <p>Trabalhamos com diversos projetos que envolve programação como:Jogos, Web Developer,Deselvolvimento de Aplicativos, e varios outros.</p>
@@ -178,27 +182,27 @@
                 <div id="single-project">
                     <div id="slidingDiv" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio01.png" alt="project 1" />
+                            <img src="../../static/images/Portfolio01.png" alt="project 1" />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Algum nome aki</h3>
+                                    <h3>{{meuprojeto.projeto}}</h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
                                     <div>
-                                        <span>Nome</span>Algum Nome</div>
+                                        <span>Nome</span>{{meuprojeto.nome}}</div>
                                     <div>
-                                        <span>Data</span>9 de setembro de 2100</div>
+                                        <span>Data</span>{{meuprojeto.data}}</div>
                                     <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                        <span>Skills</span>{{meuprojeto.linguagem}}</div>
                                     <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Link</span>{{meuprojeto.github}}</div>
                                 </div>
-                                <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
+                                <p>{{meuprojeto.sobre}}</p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +210,7 @@
                     <!-- Start details for portfolio project 2 -->
                     <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio02.png" alt="project 2">
+                            <img src="../../static/images/Portfolio02.png" alt="project 2">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -234,7 +238,7 @@
                     <!-- Start details for portfolio project 3 -->
                     <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio03.png" alt="project 3">
+                            <img src="../../static/images/Portfolio03.png" alt="project 3">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -262,7 +266,7 @@
                     <!-- Start details for portfolio project 4 -->
                     <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio04.png" alt="project 4">
+                            <img src="../../static/images/Portfolio04.png" alt="project 4">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -290,7 +294,7 @@
                     <!-- Start details for portfolio project 5 -->
                     <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio05.png" alt="project 5">
+                            <img src="../../static/images/Portfolio05.png" alt="project 5">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -318,7 +322,7 @@
                     <!-- Start details for portfolio project 6 -->
                     <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio06.png" alt="project 6">
+                            <img src="../../static/images/Portfolio06.png" alt="project 6">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -346,7 +350,7 @@
                     <!-- Start details for portfolio project 7 -->
                     <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio07.png" alt="project 7">
+                            <img src="../../static/images/Portfolio07.png" alt="project 7">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -374,7 +378,7 @@
                     <!-- Start details for portfolio project 8 -->
                     <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio08.png" alt="project 8">
+                            <img src="../../static/images/Portfolio08.png" alt="project 8">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -402,7 +406,7 @@
                     <!-- Start details for portfolio project 9 -->
                     <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="images/Portfolio09.png" alt="project 9">
+                            <img src="../../static/images/Portfolio09.png" alt="project 9">
                         </div>
                         <div class="span6">
                             <div class="project-description">
@@ -430,7 +434,7 @@
                     <ul id="portfolio-grid" class="thumbnails row">
                         <li class="span4 mix web">
                             <div class="thumbnail">
-                                <img src="images/Portfolio01.png" alt="project 1">
+                                <img src="../../static/images/Portfolio01.png" alt="project 1">
                                 <a href="#single-project" class="more show_hide" rel="#slidingDiv">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -441,7 +445,7 @@
                         </li>
                         <li class="span4 mix photo">
                             <div class="thumbnail">
-                                <img src="images/Portfolio02.png" alt="project 2">
+                                <img src="../../static/images/Portfolio02.png" alt="project 2">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -452,7 +456,7 @@
                         </li>
                         <li class="span4 mix identity">
                             <div class="thumbnail">
-                                <img src="images/Portfolio03.png" alt="project 3">
+                                <img src="../../static/images/Portfolio03.png" alt="project 3">
                                 <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -463,7 +467,7 @@
                         </li>
                         <li class="span4 mix web">
                             <div class="thumbnail">
-                                <img src="images/Portfolio04.png" alt="project 4">
+                                <img src="../../static/images/Portfolio04.png" alt="project 4">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -474,7 +478,7 @@
                         </li>
                         <li class="span4 mix photo">
                             <div class="thumbnail">
-                                <img src="images/Portfolio05.png" alt="project 5">
+                                <img src="../../static/images/Portfolio05.png" alt="project 5">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -485,7 +489,7 @@
                         </li>
                         <li class="span4 mix identity">
                             <div class="thumbnail">
-                                <img src="images/Portfolio06.png" alt="project 6">
+                                <img src="../../static/images/Portfolio06.png" alt="project 6">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -496,7 +500,7 @@
                         </li>
                         <li class="span4 mix web">
                             <div class="thumbnail">
-                                <img src="images/Portfolio07.png" alt="project 7" />
+                                <img src="../../static/images/Portfolio07.png" alt="project 7" />
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -507,7 +511,7 @@
                         </li>
                         <li class="span4 mix photo">
                             <div class="thumbnail">
-                                <img src="images/Portfolio08.png" alt="project 8">
+                                <img src="../../static/images/Portfolio08.png" alt="project 8">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -518,7 +522,7 @@
                         </li>
                         <li class="span4 mix identity">
                             <div class="thumbnail">
-                                <img src="images/Portfolio09.png" alt="project 9">
+                                <img src="../../static/images/Portfolio09.png" alt="project 9">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
                                     <i class="icon-plus"></i>
                                 </a>
@@ -543,7 +547,7 @@
                 <div class="row-fluid team">
                     <div class="span4" id="first-person">
                         <div class="thumbnail">
-                            <img src="images/Team1.png" alt="team 1">
+                            <img src="../../static/images/Team1.png" alt="team 1">
                             <h3>Kelviny Henrique</h3>
                             <ul class="social">
                                 <li>
@@ -570,7 +574,7 @@
                     </div>
                     <div class="span4" id="second-person">
                         <div class="thumbnail">
-                            <img src="images/Team2.png" alt="team 1">
+                            <img src="../../static/images/Team2.png" alt="team 1">
                             <h3>Carl Jhonson</h3>
                             <ul class="social">
                                 <li>
@@ -597,7 +601,7 @@
                     </div>
                     <div class="span4" id="third-person">
                         <div class="thumbnail">
-                            <img src="images/Team3.png" alt="team 1">
+                            <img src="../../static/images/Team3.png" alt="team 1">
                             <h3>Carl Jhonson</h3>
                             <ul class="social">
                                 <li>
@@ -683,7 +687,7 @@
                                 <p>"Eu trabalhei muito e muito tempo para tirar qualquer coisa no caminho dos meus objetivos. Não vou deixar meus colegas de equipe e não vou me deixar para baixo".</p>
                                 <div class="whopic">
                                     <div class="arrow"></div>
-                                    <img src="images/Client1.png" class="centered" alt="client 1">
+                                    <img src="../../static/images/Client1.png" class="centered" alt="client 1">
                                     <strong>Carl Jhonson
                                         <small>Programador</small>
                                     </strong>
@@ -695,7 +699,7 @@
                                 <p>"Ao motivar as pessoas, você deve envolver suas mentes e seus corações. Motivo as pessoas, espero, com o exemplo - e talvez com a excitação, tendo idéias produtivas para que os outros se envolvam".</p>
                                 <div class="whopic">
                                     <div class="arrow"></div>
-                                    <img src="images/Client2.png" class="centered" alt="client 2">
+                                    <img src="../../static/images/Client2.png" class="centered" alt="client 2">
                                     <strong>Carl Jhonson
                                         <small>Programador</small>
                                     </strong>
@@ -707,7 +711,7 @@
                                 <p>"Determine nunca ficar ocioso. Nenhuma pessoa terá ocasião de se queixar da falta de tempo que nunca perde qualquer. É maravilhoso o quanto pode ser feito se estivermos sempre fazendo".</p>
                                 <div class="whopic">
                                     <div class="arrow"></div>
-                                    <img src="images/Client3.png" class="centered" alt="client 3">
+                                    <img src="../../static/images/Client3.png" class="centered" alt="client 3">
                                     <strong>Carl Jhonson
                                         <small>Programador</small>
                                     </strong>
@@ -736,37 +740,37 @@
                     <ul class="row client-slider" id="clint-slider">
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo01.png" alt="client logo 1">
+                                <img src="../../static/images/clients/ClientLogo01.png" alt="client logo 1">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo02.png" alt="client logo 2">
+                                <img src="../../static/images/clients/ClientLogo02.png" alt="client logo 2">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo03.png" alt="client logo 3">
+                                <img src="../../static/images/clients/ClientLogo03.png" alt="client logo 3">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo04.png" alt="client logo 4">
+                                <img src="../../static/images/clients/ClientLogo04.png" alt="client logo 4">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo05.png" alt="client logo 5">
+                                <img src="../../static/images/clients/ClientLogo05.png" alt="client logo 5">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo02.png" alt="client logo 6">
+                                <img src="../../static/images/clients/ClientLogo02.png" alt="client logo 6">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/clients/ClientLogo04.png" alt="client logo 7">
+                                <img src="../../static/images/clients/ClientLogo04.png" alt="client logo 7">
                             </a>
                         </li>
                     </ul>
@@ -820,7 +824,7 @@
                                 <div id="successSend" class="alert alert-success invisible">
                                     <strong>Well done!</strong>Sua mensagem foi enviada.</div>
                                 <div id="errorSend" class="alert alert-error invisible">Houve um erro.</div>
-                                <form id="contact-form" action="php/mail.php">
+                                <form id="contact-form" action="../../static/php/mail.php">
                                     <div class="control-group">
                                         <div class="controls">
                                             <input class="span12" type="text" id="name" name="name" placeholder="* Seu nome..." />
@@ -911,20 +915,25 @@
         </div>
         <!-- ScrollUp button end -->
         <!-- Include javascript -->
-        <script src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/modernizr.custom.js"></script>
-        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-        <script type="text/javascript" src="js/jquery.cslider.js"></script>
-        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
-        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script src="../../static/js/jquery.js"></script>
+        <script type="text/javascript" src="../../static/js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="../../static/js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="../../static/js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="../../static/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="../../static/js/jquery.inview.js"></script>
         <!-- Carregar o google maps api e chamar a função initializeMap definida em app.js-->
         <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
         <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>
         <![endif]-->
-        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="../../static/js/app.js"></script>
+    {% empty %}
+    <div class="alert alert-anger">
+        <h2>Você ainda não cadastrou nenhum projeto!!</h2>
+    </div>
+    {% endfor %}
     </body>
 </html>
